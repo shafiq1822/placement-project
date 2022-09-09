@@ -1,0 +1,122 @@
+body{
+    height: 100vh;
+  }
+  
+  .registration-page-container{
+    height: 90.35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/svg\ 5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0 360px; 
+    
+}
+
+.container{
+    background-color: #fff;
+    max-width: 700px;
+    width: 100%;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin: 0 1rem;
+    box-shadow: 0 0 45px rgb(117, 117, 117);
+  }
+  
+  .container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  
+  .container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+    left: 0;
+    bottom: 0;
+    background-color: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  .container form .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 8rem;
+    margin: 20px 0 12px 0;
+  }
+  
+  form .user-details .input-box{
+    width: calc(100% / 2 - 20px);
+  }
+  
+  .user-details .input-box .details{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+  }
+  
+  .user-details .input-box input{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 0 10px ;
+    transition: border-color .2s ease;
+  }
+  
+  .user-details .input-box input:focus,
+  .user-details .input-box input:valid{
+    border-color: #9b59b6;
+  }
+  
+  .submit-btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    background-color: #645cff;
+    margin-top: 1rem;
+  }
+  
+  .submit-btn:hover{
+    background: #2ceae5;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+  }
+
+  .login-link{
+    display: inline-block;
+    color: #9b59b6;
+  }
+  
+  @media (max-width: 550px){
+    .container{
+      max-width: 100%;
+    }
+  
+    form .user-details .input-box{
+      width: 100%;
+    }
+  
+    .container form .user-details{
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  }

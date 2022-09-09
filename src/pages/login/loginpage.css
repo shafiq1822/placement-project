@@ -1,0 +1,131 @@
+body{
+    height: 100vh;
+}
+
+.login-page-container{
+    height: 90.35vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url('../../assets/svg\ 5.png');
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    background-position: 0 360px; 
+    /* overflow: hidden; */
+}
+
+.login-container{
+    max-width: 450px;
+    width: 100%;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 15px;
+    margin: 0 1rem;
+    box-shadow: 0 0 35px rgb(166, 166, 166);
+
+  }
+  
+  .login-container .title{
+    font-size: 25px;
+    font-weight: 500;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  
+  .login-container .title::before{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 30px;
+    background: #9b59b6;
+    left: 0;
+    bottom: 0;
+    background-color: linear-gradient(135deg, #71b7e6, #9b59b6);
+  }
+  
+  .login-container form .login-user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 8rem;
+    margin: 20px 0 12px 0;
+  }
+  
+  form .login-user-details .login-input-box{
+    width: 100%;
+    /* background-color: red; */
+  }
+  
+  .user-details .login-input-box .login-details{
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(59, 59, 59);
+  }
+  
+  .login-user-details .login-input-box input{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 10px;
+    outline: none;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    padding: 0 10px ;
+    transition: border-color .2s ease;
+  }
+  
+  .login-user-details .login-input-box input:focus,
+  .login-user-details .login-input-box input:valid{
+    border-color: #9b59b6;
+  }
+
+  .no-account{
+      margin-top: -10px;
+  }
+  
+  .submit-btn{
+    width: 150px;
+    height: 45px;
+    border-radius: 15px;
+    cursor: pointer;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bold;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all .3s ease;
+    background: #645cff;
+    color: #fff;
+    margin-top: 15px;
+  }
+  
+  .submit-btn:hover{
+    background: #2ceae5;
+    transform: translateY(-7px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+  }
+  
+  .register-link{
+      display: inline-block;
+      color: #9b59b6;
+  }
+
+
+  @media (max-width: 470px){
+    .container{
+      max-width: 100%;
+    }
+  
+    form .user-details .input-box{
+      width: 100%;
+    }
+  
+    .container form .login-user-details{
+      max-height: 350px;
+      overflow-y: scroll;
+    }
+  
+  }

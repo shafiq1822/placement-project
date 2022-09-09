@@ -1,0 +1,64 @@
+*, *::after, *::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.login-nav{
+    width: 100%;
+    /* position: fixed; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    background-color: #645cff;
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.login{
+    transition: all 0.3s ;
+}
+
+.login:hover{
+    font-weight: 600;
+}
+
+.register{
+    background-color: #2ceae5;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    margin-right: 0;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+}
+
+.register:hover{
+    background: #2ceae5;
+    transform: translateY(-4px);
+    color: #fff;
+    box-shadow: 0px 10px 25px rgba(46, 223, 229, 0.445);
+}
+
+
+@media (max-width: 540px){
+    .login-nav{
+        padding: .5rem 1rem;
+    }
+}

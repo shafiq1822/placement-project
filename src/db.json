@@ -1,0 +1,19 @@
+{
+    "posts": [
+        {
+            "id" : 1,
+            "title" : "json-sever",
+            "author": "typicode"
+
+        }
+    ],
+    "users": [
+        {
+            "name": "Mohammed Shafiq",
+            "email": "shafiqmohammed182@gmail.com"
+        },
+        {
+            "name": "Mphammed"
+        }
+    ]
+}
